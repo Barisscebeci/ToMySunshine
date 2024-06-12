@@ -1,0 +1,21 @@
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #EFBC9B;
+    border-radius: 25px;
+    margin: 20px auto;
+    width: fit-content;
+    max-width: 100%; /* Genişliği sınırlamak için */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+  }
+
