@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './index.css';  // Ensure this line is present to apply global styles
 
 const Countdown = ({ targetDate, onComplete }) => {
-  const calculateTimeLeft = () => {
+  const calculateTimeLeft = useCallback(() => {
     const difference = +new Date(targetDate) - +new Date();
     let timeLeft = {};
 
@@ -16,7 +16,7 @@ const Countdown = ({ targetDate, onComplete }) => {
     }
 
     return timeLeft;
-  };
+  }, [targetDate]);
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -32,7 +32,7 @@ const Countdown = ({ targetDate, onComplete }) => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [targetDate, onComplete, calculateTimeLeft]);
+  }, [calculateTimeLeft, onComplete]);
 
   const timerComponents = [];
 
