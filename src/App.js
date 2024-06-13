@@ -21,11 +21,6 @@ const App = () => {
     setShowMainPage(true);
   };
 
-  const CLIENT_ID = "7bef6089726c407da4688e84999e1f25";
-  const REDIRECT_URI = "http://localhost:3000/";
-  const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
-  const RESPONSE_TYPE = "token";
-
   const targetDate = new Date('2024-06-12T12:37:00');
 
   return (
