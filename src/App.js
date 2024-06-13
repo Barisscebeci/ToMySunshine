@@ -27,8 +27,6 @@ const App = () => {
     <div style={{ backgroundColor, minHeight: '100vh', height: '100%' }}>
       <Router>
         <div>
-          
-          
           {showMainPage ? (
             <>
               <Navbar />

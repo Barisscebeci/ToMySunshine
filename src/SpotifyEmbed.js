@@ -1,5 +1,5 @@
-// src/SpotifyEmbed.js
 import React from 'react';
+import './SpotifyEmbed.css';  // CSS dosyasını içe aktarma
 
 const SpotifyEmbed = () => {
   return (
