@@ -21,7 +21,7 @@ const App = () => {
     setShowMainPage(true);
   };
 
-  const targetDate = new Date('2024-06-12T12:37:00');
+  const targetDate = new Date('2024-06-13T12:37:00');
 
   return (
     <div style={{ backgroundColor, minHeight: '100vh', height: '100%' }}>
